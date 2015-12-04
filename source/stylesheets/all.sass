@@ -74,43 +74,80 @@ body
       border-radius: 0px
     &:active
       border-bottom: 3px solid #f9aed5
-
-.nav
   .tabs
     a
-      padding-top: 14px
+      padding-top: 16px
       &:hover
         border-bottom: 3px solid #f9aed5
         background: transparent
       &:active
         border-bottom: 3px solid #f9aed5
-
-.nav
   .brand
     a
       font-family: "Dancing Script"
       font-weight: 400
       font-size: 18px
       margin-left: 10px
+      padding-top: 12px
       &:hover
         background: transparent
 
-.nav
-  .social
-    margin-top: -3px
+.navbar
+  margin-bottom: 0px
+  .navbar-right
+    margin-right: 30px
+    .social
+      margin-top: -3px
+      a
+        padding: 10px 7px 0px 0px
+        span
+          color: #F9AED5
+          &:hover
+            color: #C25C96
+
+.navbar-default
+  background: #ffffff
+  border-bottom: none
+
+.container-fluid
+  background: #ffffff
+
+// social media icons
+
+// footer
+.footer
+  background: #ffffff
+  border-top: 1px solid #edc0d8
+  .row
+    margin-bottom: 25px
+  .nav
+    margin-right: 60px
     a
-      padding-bottom: 0px
-      padding-right: 3px
+      padding: 10px 7px 0px 0px
+      color: #f9aed5
       &:hover
         background: transparent
-    img
-      width: 90%
+        color: #C25C96
 
-.social
-  img
-    border: 1px solid #c4c4c4
-    padding: 1px 1px
-    border-radius: 100%
+.list
+  list-style-type: none
+  padding-left: 0px
+
+.footer-menu
+  a
+    color: #c4c4c4
+
+.awards
+  width: 55%
+  height: auto
+  margin-left: -13px
+
+.copyright
+  color: #ffffff
+  text-align: center
+  margin: auto
+  background-color: #f9aed5
+  padding: 7px 0px
 
 
 //--------------//
@@ -188,47 +225,11 @@ body
       padding-bottom: 20px
 
 
-// footer
-.footer
-  .row
-    margin-bottom: 25px
-
-.footer
-  background: #ffffff
-  border-top: 1px solid #edc0d8
-
-.list
-  list-style-type: none
-  padding-left: 0px
-
-.footer-menu
-  a
-    color: #c4c4c4
-
-.awards
-  width: 55%
-  height: auto
-  margin-left: -13px
-
-.social.list
-  li
-    display: inline-block
-    padding-left: 0px
-    padding-right: 15px
-
-.copyright
-  color: #ffffff
-  text-align: center
-  margin: auto
-  background-color: #f9aed5
-  padding: 7px 0px
-
-
 //--------------//
 //---Services---//
 //--------------//
 
-.services
+body.services
   .jumbotron
     background: url("http://goo.gl/gyZszb") no-repeat center
     background-size: 100% auto
@@ -238,7 +239,6 @@ body
       color: #f9aed5
     p
       color: #f9aed5
-
 
   .price
     font-weight: bold
@@ -250,7 +250,7 @@ body
 //--------------//
 //---Gallery----//
 //--------------//
-.gallery
+body.gallery
   .jumbotron
     background: url("http://pawsfurbeauty.com/wp-content/uploads/2012/03/photodune-2549156-after-bath-m.jpg") no-repeat center
     background-size: 100% auto
@@ -268,7 +268,7 @@ body
 //-----Store----//
 //--------------//
 
-.store
+body.store
   .jumbotron
     background: url("http://goo.gl/Iy6vuO") no-repeat center
     background-size: 100% auto
@@ -284,7 +284,7 @@ body
 //---Contact us--//
 //---------------//
 
-.contact
+body.contact
   .jumbotron
     background: url("http://www.dogsthings.com/wp-content/uploads/2014/08/Dog-Spa.jpg") no-repeat center
     background-size: 100% auto
@@ -293,8 +293,7 @@ body
     .header
       background-color: rgba(0, 0, 0, 0.05)
   .contact-form
-    margin-top: 20px
-    margin-bottom: 20px
+    margin-bottom: 50px
     margin-left: 200px
   .input
     width: 90%
