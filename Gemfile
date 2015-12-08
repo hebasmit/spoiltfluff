@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 
 gem "middleman", "~>3.4.0"
 gem "bootstrap-sass", :require => false
+gem "rack-contrib"
+gem "puma"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
